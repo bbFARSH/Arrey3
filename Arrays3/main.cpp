@@ -63,7 +63,6 @@ void main()
 		int i_arr_2[ROWS][COLS];
 		FillRand(i_arr_2, ROWS, COLS);
 		Print(i_arr_2, ROWS, COLS);
-		cout << "Вывод двумерного массива: " << FillRand(i_arr_2, ROWS, COLS); endl;
 	}
 	///////////////////////////////////////////////////////////////////////////
 	cout << "Double: " << endl;
