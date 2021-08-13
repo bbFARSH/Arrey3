@@ -1,22 +1,25 @@
 #pragma once
-int Sum(int arr[], const int n);
-double Sum(double arr[], const int n);
-//char Sum(char arr[], const int n);
-//long Sum(long arr[], const int n);
+#include"stdafx.h"
+int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS);
+double Sum(double arr[ROWS][COLS], const int ROWS, const int COLS);
+short Sum(short arr[ROWS][COLS], const int ROWS, const int COLS);
+float Sum(float arr[ROWS][COLS], const int ROWS, const int COLS);
+char Sum(char arr[ROWS][COLS], const int ROWS, const int COLS);
 
-double Avg(int arr[], const int n);
-double Avg(double arr[], const int n);
-//char Avg(char arr[], const int n);
-//long Avg(long arr[], const int n);
+double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS);
+double Avg(double arr[ROWS][COLS], const int ROWS, const int COLS);
+double Avg(short arr[ROWS][COLS], const int ROWS, const int COLS);
+float Avg(float arr[ROWS][COLS], const int ROWS, const int COLS);
+double Avg(char arr[ROWS][COLS], const int ROWS, const int COLS);
 
-int minValueIn(int arr[], const int n);
-double minValueIn(double arr[], const int n);
-//char minValueIn(char arr[], const int n);
-//long minValueIn(long arr[], const int n);
+int MinValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS);
+double MinValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS);
+short MinValueIn(short arr[ROWS][COLS], const int ROWS, const int COLS);
+float MinValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS);
+char MinValueIn(char arr[ROWS][COLS], const int ROWS, const int COLS);
 
-int maxValueIn(int arr[], const int n);
-double maxValueIn(double arr[], const int n);
-//char maxValueIn(char arr[], const int n);
-//long maxValueIn(long arr[], const int n);
-//void Shiftleft(int arr[], const int n, int shear);
-//void Shiftright(int arr[], const int n, int shear);
+int MaxValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS);
+double MaxValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS);
+short MaxValueIn(short arr[ROWS][COLS], const int ROWS, const int COLS);
+float MaxValueIn(float arr[ROWS][COLS], const int ROWS, const int COLS);
+char MaxValueIn(char arr[ROWS][COLS], const int ROWS, const int COLS);

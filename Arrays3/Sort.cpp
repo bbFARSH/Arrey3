@@ -1,29 +1,105 @@
 #include "Sort.h"
-void Sort(int arr[], const int n)
+void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < ROWS; i++)
 	{
-		for (int j = i + 1; j < n; j++)
+		for (int j = 0; j < COLS; j++)
 		{
-			if (arr[j] < arr[i])
+			for (int a = 0; a < ROWS; a++)
 			{
-				int buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
+				for (int b = 0; b < COLS; b++)
+				{
+					if (arr[a][b] > arr[i][j])
+					{
+						int buffer = arr[i][j];
+						arr[i][j] = arr[a][b];
+						arr[a][b] = buffer;
+					}
+				}
 			}
 		}
 	}
-}void Sort(double arr[], const int n)
+}
+void Sort(double arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < ROWS; i++)
 	{
-		for (int j = i + 1; j < n; j++)
+		for (int j = 0; j < COLS; j++)
 		{
-			if (arr[j] < arr[i])
+			for (int a = 0; a < ROWS; a++)
 			{
-				double buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
+				for (int b = 0; b < COLS; b++)
+				{
+					if (arr[a][b] > arr[i][j])
+					{
+						double buffer = arr[i][j];
+						arr[i][j] = arr[a][b];
+						arr[a][b] = buffer;
+					}
+				}
+			}
+		}
+	}
+}
+void Sort(short arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			for (int a = 0; a < ROWS; a++)
+			{
+				for (int b = 0; b < COLS; b++)
+				{
+					if (arr[a][b] > arr[i][j])
+					{
+						short buffer = arr[i][j];
+						arr[i][j] = arr[a][b];
+						arr[a][b] = buffer;
+					}
+				}
+			}
+		}
+	}
+}
+void Sort(float arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			for (int a = 0; a < ROWS; a++)
+			{
+				for (int b = 0; b < COLS; b++)
+				{
+					if (arr[a][b] > arr[i][j])
+					{
+						float buffer = arr[i][j];
+						arr[i][j] = arr[a][b];
+						arr[a][b] = buffer;
+					}
+				}
+			}
+		}
+	}
+}
+void Sort(char arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			for (int a = 0; a < ROWS; a++)
+			{
+				for (int b = 0; b < COLS; b++)
+				{
+					if (arr[a][b] > arr[i][j])
+					{
+						char buffer = arr[i][j];
+						arr[i][j] = arr[a][b];
+						arr[a][b] = buffer;
+					}
+				}
 			}
 		}
 	}
